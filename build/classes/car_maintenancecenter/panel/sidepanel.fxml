@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="270.0" style="-fx-background-color: #B3EFF9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="car_maintenancecenter.panel.sidepanel">
+   <children>
+      <AnchorPane prefHeight="172.0" prefWidth="270.0" style="-fx-background-color: f0f0f0;">
+         <children>
+            <ImageView fitHeight="166.0" layoutX="56.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+               <image>
+                  <Image url="@../../images/logo.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutY="192.0" onAction="#edit" prefHeight="100.0" prefWidth="270.0" stylesheets="@../pcss.css" text="New Car" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="addCar" buttonType="RAISED" contentDisplay="CENTER" layoutY="306.0" onAction="#stat" prefHeight="100.0" prefWidth="270.0" stylesheets="@../pcss.css" text="Statistics" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="history" buttonType="RAISED" contentDisplay="CENTER" layoutY="418.0" onAction="#openHistory" prefHeight="100.0" prefWidth="270.0" stylesheets="@../pcss.css" text="History" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutY="532.0" onAction="#pro" prefHeight="100.0" prefWidth="270.0" stylesheets="@../pcss.css" text="Profile Edit" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="150.0" fitWidth="30.0" layoutX="41.0" layoutY="567.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/file.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="30.0" layoutX="41.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/history.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="30.0" layoutX="41.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/newcaar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="30.0" layoutX="41.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/st.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

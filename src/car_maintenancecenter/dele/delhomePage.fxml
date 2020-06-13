@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #f4f6f9;" stylesheets="@pcss.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="car_maintenancecenter.homePageController">
+   <children>
+      <ImageView fitHeight="278.0" fitWidth="792.0" layoutX="501.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="444.0" AnchorPane.leftAnchor="501.0" AnchorPane.rightAnchor="0.1" AnchorPane.topAnchor="-2.0">
+         <image>
+            <Image url="@../images/wel.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="297.0" layoutY="281.0" prefHeight="95.0" prefWidth="661.0">
+         <children>
+            <JFXTextField focusColor="#b92b27" layoutX="3.0" layoutY="6.0" maxWidth="601.0" minWidth="526.0" prefHeight="70.0" prefWidth="601.0" style="-fx-border-color: linear-gradient(to right, #b92b27, #1565c0); -fx-border-width: 5px; -fx-border-radius: 30px;">
+               <font>
+                  <Font name="Arial" size="29.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton buttonType="RAISED" layoutX="557.0" layoutY="-9.0" prefHeight="93.0" prefWidth="93.0" ripplerFill="#e41616" style="-fx-border-color: linear-gradient(to right, #b92b27, #1565c0); -fx-background-color: #f4f6f9; -fx-border-width: 5px; -fx-background-radius: 100%; -fx-border-radius: 100%;" text=".">
+               <graphic>
+                  <FontAwesomeIcon fontSmoothingType="LCD" glyphName="SEARCH" size="50PX" text="" textAlignment="CENTER">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#b92b27" />
+                              <Stop color="#1565c0" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </FontAwesomeIcon>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <HBox layoutX="78.0" layoutY="485.0" prefHeight="208.0" prefWidth="1137.0" style="-fx-spacing: 30px;" visible="false">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Circle fill="DODGERBLUE" layoutX="97.0" layoutY="67.0" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="21.0" layoutY="147.0" prefHeight="49.0" prefWidth="169.0" text="name owner">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Circle fill="DODGERBLUE" layoutX="97.0" layoutY="67.0" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="21.0" layoutY="147.0" prefHeight="49.0" prefWidth="169.0" text="name owner">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Circle fill="DODGERBLUE" layoutX="97.0" layoutY="67.0" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="21.0" layoutY="147.0" prefHeight="49.0" prefWidth="169.0" text="name owner">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

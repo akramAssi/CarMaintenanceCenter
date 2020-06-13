@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Car_MaintenanceCenter.jnlp">
+  <information>
+    <title>Car_MaintenanceCenter</title>
+    <vendor>akramassi</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Car_MaintenanceCenter.jar" size="7123407" download="eager" />
+    <jar href="lib/barcodes-7.1.9.jar" size="150650" download="eager" />
+    <jar href="lib/font-asian-7.1.9.jar" size="2191544" download="eager" />
+    <jar href="lib/fontawesomefx-8.2.jar" size="180341" download="eager" />
+    <jar href="lib/forms-7.1.9.jar" size="127244" download="eager" />
+    <jar href="lib/hyph-7.1.9.jar" size="982992" download="eager" />
+    <jar href="lib/io-7.1.9.jar" size="790630" download="eager" />
+    <jar href="lib/itextpdf-5.4.0.jar" size="1889485" download="eager" />
+    <jar href="lib/jfoenix.jar" size="2211776" download="eager" />
+    <jar href="lib/kernel-7.1.9.jar" size="1173868" download="eager" />
+    <jar href="lib/layout-7.1.9.jar" size="442180" download="eager" />
+    <jar href="lib/ojdbc8.jar" size="4036257" download="eager" />
+    <jar href="lib/pdfa-7.1.9.jar" size="48671" download="eager" />
+    <jar href="lib/pdftest-7.1.9.jar" size="27067" download="eager" />
+    <jar href="lib/sign-7.1.9.jar" size="128492" download="eager" />
+    <jar href="lib/styled-xml-parser-7.1.9.jar" size="495027" download="eager" />
+    <jar href="lib/svg-7.1.9.jar" size="126018" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Car_MaintenanceCenter" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="car_maintenancecenter.Car_MaintenanceCenter"  name="Car_MaintenanceCenter" />
+  <update check="always"/>
+</jnlp>

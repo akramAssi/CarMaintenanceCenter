@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="608.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="car_maintenancecenter.edit.car">
+   <children>
+      <Line endX="341.60345458984375" endY="-2.878662109375" layoutX="230.0" layoutY="357.0" startX="-219.878662109375" startY="-2.878662109375" strokeWidth="3.0">
+         <effect>
+            <Shadow />
+         </effect>
+      </Line>
+      <Line endX="-221.99996948242188" endY="-306.621337890625" layoutX="230.0" layoutY="366.0" startX="-221.99998474121094" startY="-14.0" strokeWidth="3.0">
+         <effect>
+            <Shadow />
+         </effect>
+      </Line>
+      <AnchorPane layoutX="8.0" layoutY="39.0" prefHeight="313.0" prefWidth="596.0" style="-fx-border-width: 0.4px; -fx-border-color: #273238; -fx-background-color: ebf2f3; -fx-background-radius: 7px; -fx-border-radius: 7px;">
+         <children>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="20.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/carin.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="97.0" layoutY="48.0" styleClass="pal" stylesheets="@../pcss.css" text="Vehicle  :" textFill="#484848">
+               <font>
+                  <Font name="Arial" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="141.0" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="260.0" styleClass="pal" stylesheets="@../pcss.css" text="-Plate Number : " textFill="#484848">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="191.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="260.0" styleClass="pal" stylesheets="@../pcss.css" text="-Fuel type :" textFill="#484848">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="oid" focusColor="#273238" layoutX="316.0" layoutY="90.0" prefHeight="40.0" prefWidth="220.0" />
+            <JFXTextField fx:id="manu" focusColor="#273238" layoutX="316.0" layoutY="140.0" prefHeight="40.0" prefWidth="220.0" />
+            <JFXComboBox fx:id="fuel" layoutX="323.0" layoutY="189.0" prefHeight="40.0" prefWidth="205.0" />
+            <JFXButton buttonType="RAISED" layoutX="460.0" layoutY="256.0" onAction="#upc" prefHeight="40.0" prefWidth="120.0" ripplerFill="#f2ae02" styleClass="bal" stylesheets="@../pcss.css" text="update">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="23.0" layoutY="90.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="260.0" styleClass="pal" stylesheets="@../pcss.css" text="- Owner ID  :" textFill="#484848">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <FontAwesomeIcon glyphName="CLOSE" layoutX="576.0" layoutY="31.0" onMouseClicked="#CLOSE" size="30PX" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+
+<JFXTabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <tabs>
+      <Tab text="Untitled Tab">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="278.0" fitWidth="792.0" layoutX="513.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/wel.jpg" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="317.0" layoutY="293.0" prefHeight="95.0" prefWidth="661.0">
+                     <children>
+                        <JFXTextField focusColor="#b92b27" layoutX="3.0" layoutY="6.0" maxWidth="601.0" minWidth="526.0" prefHeight="70.0" prefWidth="601.0" style="-fx-border-color: linear-gradient(to right, #b92b27, #1565c0); -fx-border-width: 5px; -fx-border-radius: 30px;">
+                           <font>
+                              <Font name="Arial" size="29.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXButton buttonType="RAISED" layoutX="560.0" layoutY="-11.0" prefHeight="108.0" prefWidth="108.0" ripplerFill="#e41616" style="-fx-border-color: linear-gradient(to right, #b92b27, #1565c0); -fx-background-color: #f4f6f9; -fx-border-width: 5px; -fx-background-radius: 100%; -fx-border-radius: 100%;" text=".">
+                           <graphic>
+                              <FontAwesomeIcon fontSmoothingType="LCD" glyphName="SEARCH" size="50PX" text="" textAlignment="CENTER">
+                                 <fill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop color="#b92b27" />
+                                          <Stop color="#1565c0" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </fill>
+                              </FontAwesomeIcon>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <HBox layoutX="183.0" layoutY="449.0" prefHeight="208.0" prefWidth="1137.0" style="-fx-spacing: 30px;">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Circle fill="DODGERBLUE" layoutX="97.0" layoutY="67.0" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Label layoutX="21.0" layoutY="147.0" prefHeight="49.0" prefWidth="169.0" text="name owner">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Circle fill="DODGERBLUE" layoutX="97.0" layoutY="67.0" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Label layoutX="21.0" layoutY="147.0" prefHeight="49.0" prefWidth="169.0" text="name owner">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Circle fill="DODGERBLUE" layoutX="97.0" layoutY="67.0" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Label layoutX="21.0" layoutY="147.0" prefHeight="49.0" prefWidth="169.0" text="name owner">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+   </tabs>
+</JFXTabPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="206.0" prefWidth="618.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="car_maintenancecenter.edit.techcont">
+   <children>
+      <Line endX="338.78887939453125" endY="-1.000030517578125" layoutX="234.0" layoutY="199.0" startX="-222.0" startY="-1.000030517578125" strokeWidth="3.0">
+         <effect>
+            <Shadow />
+         </effect>
+      </Line>
+      <Line endX="-222.0" endY="-142.0" layoutX="234.0" layoutY="200.0" startX="-222.0" startY="-7.0" strokeWidth="3.0">
+         <effect>
+            <Shadow />
+         </effect>
+      </Line>
+      <AnchorPane layoutX="12.0" layoutY="39.0" prefHeight="158.0" prefWidth="596.0" style="-fx-background-color: ebf2f3;" styleClass="pa" stylesheets="@../pcss.css">
+         <children>
+            <Label layoutX="4.0" layoutY="100.0" prefHeight="40.0" prefWidth="200.0" styleClass="pal" stylesheets="@../pcss.css" text="- Technical name :">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="48.0" prefHeight="40.0" prefWidth="200.0" styleClass="pal" stylesheets="@../pcss.css" text="- Technical ID  :">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="tid" layoutX="225.0" layoutY="48.0" prefHeight="40.0" prefWidth="220.0" />
+            <JFXTextField fx:id="tname" layoutX="225.0" layoutY="100.0" prefHeight="40.0" prefWidth="220.0" />
+            <ImageView fitHeight="40.0" fitWidth="41.0" layoutX="21.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/tech.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="70.0" layoutY="9.0" prefHeight="33.0" prefWidth="146.0" styleClass="pal" stylesheets="@../pcss.css" text="Technical">
+               <font>
+                  <Font name="Arial" size="29.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="453.0" layoutY="100.0" onAction="#add" prefHeight="40.0" prefWidth="120.0" ripplerFill="#f2ae02" styleClass="bal" stylesheets="@../pcss.css" text="Add Technical">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <FontAwesomeIcon glyphName="CLOSE" layoutX="577.0" layoutY="32.0" onMouseClicked="#CLOSE" size="30PX" />
+   </children>
+</AnchorPane>

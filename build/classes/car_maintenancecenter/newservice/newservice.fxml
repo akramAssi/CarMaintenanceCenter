@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="696.0" prefWidth="1400.0" style="-fx-background-color: B3EFF9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="car_maintenancecenter.newservice.newservice">
+   <children>
+      <Line endX="425.78240966796875" endY="-2.878662109375" layoutX="253.0" layoutY="669.0" startX="-219.878662109375" startY="-2.878662109375" strokeWidth="3.0">
+         <effect>
+            <Shadow />
+         </effect>
+      </Line>
+      <Line endX="-222.0" endY="-595.2734985351562" layoutX="253.0" layoutY="678.0" startX="-221.99998474121094" startY="-14.0" strokeWidth="3.0">
+         <effect>
+            <Shadow />
+         </effect>
+      </Line>
+      <AnchorPane layoutX="33.0" layoutY="54.0" prefHeight="610.0" prefWidth="677.0" styleClass="pa" stylesheets="@../pcss.css">
+         <children>
+            <JFXTextArea fx:id="odesc" focusColor="#273238" layoutX="42.0" layoutY="132.0" maxWidth="621.0" minWidth="438.0" prefHeight="105.0" prefWidth="600.0" promptText="write a description of customer issues here....." style="-fx-text-fill: #484848;" stylesheets="@../pcss.css" unFocusColor="#484848">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+               </JFXTextArea>
+            <Label layoutX="45.0" layoutY="68.0" prefHeight="40.0" prefWidth="371.0" styleClass="pal" stylesheets="@../pcss.css" text="Describe the problems of customer :">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="267.0" prefHeight="34.0" prefWidth="369.0" styleClass="pal" stylesheets="@../pcss.css" text="Description of problems by an expert ">
+               <font>
+                  <Font size="22.0" />
+               </font></Label>
+            <JFXTextArea fx:id="tdesc" focusColor="#273238" layoutX="42.0" layoutY="325.0" maxWidth="612.0" minWidth="438.0" prefHeight="105.0" prefWidth="600.0" promptText="Write a description of problems by an expert here....." stylesheets="@../pcss.css">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font></JFXTextArea>
+            <JFXComboBox fx:id="mt" layoutX="220.0" layoutY="490.0" prefHeight="39.0" prefWidth="144.0" stylesheets="@../pcss.css" />
+            <Label layoutX="45.0" layoutY="493.0" prefHeight="39.0" prefWidth="127.0" styleClass="pal" stylesheets="@../pcss.css" text="Maintenance type">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font></Label>
+            <JFXButton layoutX="504.0" layoutY="526.0" onAction="#save" prefHeight="40.0" prefWidth="120.0" styleClass="bal" text="save" textFill="#484848">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Line endX="-45.051513671875" endY="-2.878631591796875" layoutX="1038.0" layoutY="279.0" startX="-219.878662109375" startY="-2.878662109375" strokeWidth="3.0">
+         <effect>
+            <Shadow />
+         </effect>
+      </Line>
+      <Line endX="-222.0" endY="-197.973388671875" layoutX="1038.0" layoutY="288.0" startX="-221.99998474121094" startY="-14.0" strokeWidth="3.0">
+         <effect>
+            <Shadow />
+         </effect>
+      </Line>
+      <AnchorPane layoutX="819.0" layoutY="67.0" prefHeight="206.0" prefWidth="200.0" styleClass="pa" stylesheets="@../pcss.css">
+         <children>
+            <Label layoutX="48.0" layoutY="180.0" styleClass="pal" text="Engine oil and filters" />
+            <StackPane fx:id="eoil" layoutX="5.0" prefHeight="170.0" prefWidth="190.0" />
+         </children></AnchorPane>
+      <Line endX="-45.051513671875" endY="-2.878631591796875" layoutX="1368.0" layoutY="279.0" startX="-219.878662109375" startY="-2.878662109375" strokeWidth="3.0">
+         <effect>
+            <Shadow />
+         </effect>
+      </Line>
+      <Line endX="-222.0" endY="-197.973388671875" layoutX="1368.0" layoutY="288.0" startX="-221.99998474121094" startY="-14.0" strokeWidth="3.0">
+         <effect>
+            <Shadow />
+         </effect>
+      </Line>
+      <AnchorPane layoutX="1149.0" layoutY="67.0" prefHeight="206.0" prefWidth="200.0" styleClass="pa" stylesheets="@../pcss.css">
+         <children>
+            <StackPane fx:id="escr" layoutX="5.0" prefHeight="170.0" prefWidth="190.0" />
+            <Label layoutX="61.0" layoutY="180.0" styleClass="pal" text="Engine scraping" />
+         </children></AnchorPane>
+      <Line endX="-45.051513671875" endY="-2.878631591796875" layoutX="1038.0" layoutY="569.0" startX="-219.878662109375" startY="-2.878662109375" strokeWidth="3.0">
+         <effect>
+            <Shadow />
+         </effect>
+      </Line>
+      <Line endX="-222.0" endY="-197.973388671875" layoutX="1038.0" layoutY="578.0" startX="-221.99998474121094" startY="-14.0" strokeWidth="3.0">
+         <effect>
+            <Shadow />
+         </effect>
+      </Line>
+      <AnchorPane layoutX="819.0" layoutY="357.0" prefHeight="206.0" prefWidth="200.0" styleClass="pa" stylesheets="@../pcss.css">
+         <children>
+            <Label layoutX="66.0" layoutY="180.0" styleClass="pal" text="Oil gear box" />
+            <StackPane fx:id="goil" layoutX="5.0" prefHeight="170.0" prefWidth="190.0" />
+         </children></AnchorPane>
+      <Line endX="-45.051513671875" endY="-2.878631591796875" layoutX="1368.0" layoutY="569.0" startX="-219.878662109375" startY="-2.878662109375" strokeWidth="3.0">
+         <effect>
+            <Shadow />
+         </effect>
+      </Line>
+      <Line endX="-222.0" endY="-197.973388671875" layoutX="1368.0" layoutY="578.0" startX="-221.99998474121094" startY="-14.0" strokeWidth="3.0">
+         <effect>
+            <Shadow />
+         </effect>
+      </Line>
+      <AnchorPane layoutX="1149.0" layoutY="357.0" prefHeight="206.0" prefWidth="200.0" styleClass="pa" stylesheets="@../pcss.css">
+         <children>
+            <Label layoutX="74.0" layoutY="180.0" styleClass="pal" text="spark plugs" />
+            <StackPane fx:id="sp" layoutX="5.0" prefHeight="170.0" prefWidth="190.0" />
+         </children></AnchorPane>
+      <JFXTextField fx:id="kilo" focusColor="#273238" labelFloat="true" layoutX="845.0" layoutY="606.0" maxWidth="204.0" minWidth="204.0" prefHeight="44.0" prefWidth="204.0" promptText="Kilo counter" unFocusColor="#484848">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" defaultButton="true" layoutX="1122.0" layoutY="605.0" onAction="#cal" prefHeight="47.0" prefWidth="150.0" ripplerFill="#eb9307" styleClass="bal" stylesheets="@../pcss.css" text="Calculate" textFill="#484848">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font></JFXButton>
+      <AnchorPane layoutX="47.0" layoutY="14.0" onMouseClicked="#backToHome" prefHeight="30.0" prefWidth="170.0">
+         <children>
+            <Label layoutX="46.0" layoutY="7.0" prefHeight="19.0" prefWidth="113.0" styleClass="pal" stylesheets="@../pcss.css" text="back to home" textFill="#484848">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="#484848" glyphName="ARROW_LEFT" layoutX="8.0" layoutY="26.0" size="30px" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+   </children>
+</AnchorPane>

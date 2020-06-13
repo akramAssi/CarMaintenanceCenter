@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1080.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="695.0" prefWidth="1400.0" style="-fx-background-color: B3EFF9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="car_maintenancecenter.edit.editcont">
+   <children>
+      <StackPane maxHeight="1080.0" prefHeight="695.0" prefWidth="1400.0">
+         <children>
+            <HBox fx:id="hbox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="1394.0" spacing="1.0" style="-fx-spacing: 20;">
+               <children>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="850.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="630.0" prefWidth="731.0" style="-fx-background-color: B3EFF9;">
+                     <children>
+                        <TableView fx:id="table" layoutX="11.0" layoutY="86.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="524.0" prefWidth="687.0" style="-fx-background-color: #AEE8F2; -fx-border-width: .4px; -fx-border-color: #273238; -fx-border-radius: 7px; -fx-background-radius: 7px;" styleClass="te" stylesheets="@../table.css">
+                           <effect>
+                              <DropShadow blurType="GAUSSIAN" color="#8d8d8d" height="75.64" offsetX="-5.0" offsetY="7.0" radius="29.7325" width="45.29" />
+                           </effect>
+                        </TableView>
+                        <JFXRadioButton fx:id="rtech" layoutX="567.0" layoutY="50.0" onAction="#tech" selected="true" style="-fx-selected-color: #D95E01;" stylesheets="@../pcss.css" text="Technical">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="qw" />
+                           </toggleGroup>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="rcar" layoutX="502.0" layoutY="50.0" onAction="#car" style="-fx-selected-color: #D95E01;" stylesheets="@../pcss.css" text="car" toggleGroup="$qw">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="rowner" layoutX="419.0" layoutY="50.0" onAction="#owner" style="-fx-selected-color: #D95E01;" stylesheets="@../pcss.css" text="owner" toggleGroup="$qw">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <TextField fx:id="sh" layoutX="22.0" layoutY="36.0" onKeyPressed="#sh" prefHeight="38.0" prefWidth="297.0" promptText="Search" style="-fx-background-radius: 20px;">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </TextField>
+                        <FontAwesomeIcon fill="#484848" glyphName="TIMES_CIRCLE" layoutX="394.0" layoutY="68.0" onMouseClicked="#delete" size="30px" />
+                        <Line fx:id="line" endX="-15.19451904296875" endY="367.156005859375" layoutX="745.0" layoutY="229.0" startX="-15.19451904296875" startY="-186.130859375" stroke="#484848" visible="false" />
+                        <FontAwesomeIcon fx:id="findc" fill="#484848" glyphName="EDIT" layoutX="355.0" layoutY="68.0" onMouseClicked="#edit" size="30PX" />
+                        <AnchorPane onMouseClicked="#backToHome" prefHeight="30.0" prefWidth="170.0">
+                           <children>
+                              <Label layoutX="46.0" layoutY="7.0" prefHeight="19.0" prefWidth="113.0" styleClass="pal" stylesheets="@../pcss.css" text="back to home" textFill="#484848">
+                                 <font>
+                                    <Font name="Arial" size="16.0" />
+                                 </font>
+                              </Label>
+                              <FontAwesomeIcon fill="#484848" glyphName="ARROW_LEFT" layoutX="8.0" layoutY="26.0" size="30px" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </AnchorPane>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </AnchorPane>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

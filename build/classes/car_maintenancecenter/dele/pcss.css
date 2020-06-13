@@ -1,0 +1,81 @@
+* {
+    -fx-primary : #273238;
+    -fx-secondary : #FFFF8D;
+    -fx-primarytext : #B2B2B2;
+    -fx-blue: #1976D2;
+    -fx-red: #FF0000;
+    -fx-color-1:#1976D2;
+}
+
+.tab{
+    -fx-background-color: -fx-primary;
+}
+
+.tab-header-background{
+    -fx-background-color: -fx-primary;
+}
+
+.tab-label{
+    -fx-text-fill: -fx-secondary ;
+    -fx-font-size: 10pt; 
+}
+.tab:hover .tab-label
+{
+    -fx-text-fill: #ffffff;
+}
+
+.tab-main{
+    -fx-pref-height : 60;
+    -fx-max-height : 60;
+}
+
+.settings-tab{
+    -fx-background-color: derive(-fx-primary, 10%);
+    -fx-padding: 5px 20px 5px 20px;
+}
+
+.settings-tab:selected{
+    -fx-background-color: -fx-secondary;
+}
+.tab:hover
+{
+    -fx-background-color: #47513e;
+}
+
+.settings-tab:selected .tab-label{
+    -fx-text-fill: -fx-primary;
+}
+
+.settings-tab .tab-header-background{
+    -fx-background-color: derive(-fx-primary, -50%);
+}
+.button
+{
+    -fx-background-color: #FCC699
+
+}
+.button:hover
+{
+    -fx-background-color: #D95E01
+}
+.pa
+{
+    -fx-border-width: 0.4px;
+    -fx-border-color: #273238;
+    -fx-background-color: #AEE8F2;
+    -fx-border-radius: 7px;
+    -fx-background-radius: 7px;
+    
+}
+.pal 
+{
+    -fx-text-fill:#484848;
+}
+.bal 
+{
+    -fx-text-fill:#484848;
+}
+.bal:hover
+{
+    -fx-text-fill:#fff;
+}

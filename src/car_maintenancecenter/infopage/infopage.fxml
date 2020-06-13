@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="600.0" style="-fx-background-color: B3EFF9; -fx-background-radius: 10px;" styleClass="pal" stylesheets="@../pcss.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="car_maintenancecenter.infopage.infopage">
+   <children>
+      <AnchorPane layoutX="-2.0" prefHeight="16.0" prefWidth="602.0" style="-fx-background-color: #273238; -fx-background-radius: 7px;" styleClass="ba">
+         <children>
+            <FontAwesomeIcon fx:id="cc" fill="#f1f2f2" glyphName="CLOSE" layoutX="560.0" layoutY="24.0" onMouseClicked="#close" size="30" />
+         </children>
+      </AnchorPane>
+      <Line endX="150.92453002929688" endY="-1.000030517578125" layoutX="242.0" layoutY="255.0" startX="-222.0" startY="-1.000030517578125" strokeWidth="3.0">
+         <effect>
+            <Shadow />
+         </effect>
+      </Line>
+      <Line endX="-222.00001525878906" endY="-204.22450256347656" layoutX="242.0" layoutY="261.0" startX="-222.0" startY="-7.0" strokeWidth="3.0">
+         <effect>
+            <Shadow />
+         </effect>
+         <rotationAxis>
+            <Point3D z="-2.0" />
+         </rotationAxis>
+      </Line>
+      <AnchorPane layoutX="20.0" layoutY="50.0" prefHeight="202.0" prefWidth="388.0" stylesheets="@../pcss.css">
+         <children>
+            <Label fx:id="name1" prefHeight="0.0" prefWidth="0.0" styleClass="pal" stylesheets="@../pcss.css">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="62.0" prefHeight="28.0" prefWidth="117.0" styleClass="pal" stylesheets="@../pcss.css" text="- Onwer name  :">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="101.0" prefHeight="17.0" prefWidth="98.0" styleClass="pal" stylesheets="@../pcss.css" text="- Phone number:">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="136.0" prefHeight="17.0" prefWidth="69.0" styleClass="pal" stylesheets="@../pcss.css" text="- Address">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="55.0" layoutY="27.0" prefHeight="17.0" prefWidth="98.0" styleClass="pal" stylesheets="@../pcss.css" text="Owner :">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="33.0" fitWidth="37.0" layoutX="12.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/info.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="name" layoutX="152.0" layoutY="62.0" prefHeight="28.0" prefWidth="218.0" styleClass="pal" stylesheets="@../pcss.css">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="phone" layoutX="152.0" layoutY="96.0" prefHeight="28.0" prefWidth="218.0" styleClass="pal" stylesheets="@../pcss.css">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="address" layoutX="152.0" layoutY="134.0" prefHeight="28.0" prefWidth="218.0" styleClass="pal" stylesheets="@../pcss.css">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+         </children>
+         <styleClass>
+            <String fx:value="pal" />
+            <String fx:value="pa" />
+         </styleClass>
+      </AnchorPane>
+      <ImageView fitHeight="134.0" fitWidth="178.0" layoutX="416.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXButton buttonType="RAISED" layoutX="439.0" layoutY="480.0" onAction="#newS" prefHeight="39.0" prefWidth="144.0" ripplerFill="#ffa100" styleClass="pal" stylesheets="@../pcss.css" text="New service" textAlignment="RIGHT">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="439.0" layoutY="550.0" onAction="#openhis" prefHeight="39.0" prefWidth="144.0" ripplerFill="#ffa100" styleClass="pal" stylesheets="@../pcss.css" text="History" textAlignment="RIGHT">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Line endX="147.72406005859375" endY="-1.0" layoutX="241.0" layoutY="628.0" startX="-222.0" startY="-1.000030517578125" strokeWidth="3.0">
+         <effect>
+            <Shadow />
+         </effect>
+      </Line>
+      <Line endX="-222.0" endY="-331.5841979980469" layoutX="241.0" layoutY="634.0" startX="-222.0" startY="-7.0" strokeWidth="3.0">
+         <effect>
+            <Shadow />
+         </effect>
+         <rotationAxis>
+            <Point3D z="-2.0" />
+         </rotationAxis>
+      </Line>
+      <AnchorPane layoutX="20.0" layoutY="285.0" prefHeight="340.0" prefWidth="388.0" styleClass="pa" stylesheets="@../pcss.css">
+         <children>
+            <ImageView fitHeight="39.0" fitWidth="57.0" layoutX="16.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/carin.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="64.0" layoutY="27.0" styleClass="pal" stylesheets="@../pcss.css" text="Vehicle  :">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="63.0" prefHeight="17.0" prefWidth="144.0" styleClass="pal" stylesheets="@../pcss.css" text="-Manufacture company : ">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="103.0" prefHeight="17.0" prefWidth="133.0" styleClass="pal" stylesheets="@../pcss.css" text="- Model : ">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="143.0" prefHeight="17.0" prefWidth="294.0" styleClass="pal" stylesheets="@../pcss.css" text="-Year of production : ">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="183.0" prefHeight="17.0" prefWidth="326.0" styleClass="pal" stylesheets="@../pcss.css" text="- VIN number : ">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="223.0" prefHeight="17.0" prefWidth="294.0" styleClass="pal" stylesheets="@../pcss.css" text="-Plate Number : ">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="263.0" prefHeight="17.0" prefWidth="159.0" styleClass="pal" stylesheets="@../pcss.css" text="-Date of last maintenance : ">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="303.0" prefHeight="17.0" prefWidth="294.0" styleClass="pal" stylesheets="@../pcss.css" text="- Last technical : ">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="manname" layoutX="212.0" layoutY="344.0" prefHeight="28.0" prefWidth="178.0" styleClass="pal" stylesheets="@../pcss.css">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="model" layoutX="212.0" layoutY="384.0" prefHeight="28.0" prefWidth="178.0" styleClass="pal" stylesheets="@../pcss.css">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="year" layoutX="212.0" layoutY="424.0" prefHeight="28.0" prefWidth="178.0" styleClass="pal" stylesheets="@../pcss.css">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="vin" layoutX="212.0" layoutY="464.0" prefHeight="28.0" prefWidth="178.0" styleClass="pal" stylesheets="@../pcss.css">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="plate" layoutX="212.0" layoutY="504.0" prefHeight="28.0" prefWidth="178.0" styleClass="pal" stylesheets="@../pcss.css">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="date" layoutX="232.0" layoutY="544.0" prefHeight="28.0" prefWidth="168.0" styleClass="pal" stylesheets="@../pcss.css">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="tech" layoutX="212.0" layoutY="584.0" prefHeight="28.0" prefWidth="168.0" styleClass="pal" stylesheets="@../pcss.css">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

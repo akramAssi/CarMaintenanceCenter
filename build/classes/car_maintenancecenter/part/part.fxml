@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="190.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="car_maintenancecenter.part.part">
+   <children>
+      <Label fx:id="part" alignment="CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="190.0" prefWidth="601.0" text="no part add" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Arial" size="25.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="16.0" prefWidth="602.0" style="-fx-background-color: #273238;">
+         <children>
+            <FontAwesomeIcon fx:id="cc" fill="#f1f2f2" glyphName="CLOSE" layoutX="560.0" layoutY="24.0" onMouseClicked="#close" size="30" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

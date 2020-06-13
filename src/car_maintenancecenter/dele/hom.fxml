@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Tab?>
+
+<JFXTabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1400.0" styleClass="tab-header-background" stylesheets="@../car_maintenancecenter/pcss.css" tabMaxHeight="700.0" tabMaxWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <tabs>
+      <Tab text="Untitled Tab">
+         <content>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1400.0">
+               <children>
+                  <ImageView fitHeight="900.0" fitWidth="1400.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/Users/akramassi/NetBeansProjects/Car_MaintenanceCenter/src/images/bac1.jpg" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="361.0" layoutY="346.0" prefHeight="61.0" prefWidth="648.0" style="-fx-background-color: #fff; -fx-background-radius: 14px;">
+                     <children>
+                        <JFXTextField layoutX="8.0" layoutY="5.0" maxWidth="543.0" minWidth="543.0" prefHeight="52.0" prefWidth="543.0">
+                           <font>
+                              <Font name="Arial" size="25.0" />
+                           </font>
+                        </JFXTextField>
+                        <MenuButton alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="1.0" layoutX="601.0" layoutY="13.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="41.0" prefWidth="36.0" style="-fx-background-color: #FFF;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Action 1" />
+                              <MenuItem mnemonicParsing="false" text="Action 2" />
+                           </items>
+                        </MenuButton>
+                        <JFXButton layoutX="550.0" layoutY="9.0" prefHeight="47.0" prefWidth="56.0" text="." textFill="#f5f2f2">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <graphic>
+                              <FontAwesomeIcon fill="#1c417c" glyphName="SEARCH" size="30PX" />
+                           </graphic>
+                        </JFXButton>
+                        <Line endX="-100.0" endY="48.0" layoutX="701.0" layoutY="8.0" startX="-100.0" startY="-4.024078369140625" stroke="#b2acac" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+   </tabs>
+</JFXTabPane>

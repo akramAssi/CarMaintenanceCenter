@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="696.0" prefWidth="1400.0" style="-fx-background-color: B3EFF9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="car_maintenancecenter.carhis.carhis">
+   <children>
+      <TableView fx:id="asa" layoutY="61.0" prefHeight="627.0" prefWidth="1400.0">
+        <columns>
+          <TableColumn fx:id="cno" minWidth="50.0" prefWidth="100.0" text="NO History" />
+          <TableColumn fx:id="cudesc" minWidth="100.0" prefWidth="271.9999694824219" text="Customer's Description" />
+            <TableColumn fx:id="tdes" minWidth="150.0" prefWidth="326.0" text="Technical description" />
+            <TableColumn fx:id="tech" minWidth="50.0" prefWidth="100.0" text="tech" />
+            <TableColumn fx:id="type" prefWidth="90.0" text="type man" />
+            <TableColumn fx:id="note" minWidth="100.0" prefWidth="200.0" sortType="DESCENDING" text="other notes" />
+            <TableColumn fx:id="kilo" minWidth="50.0" prefWidth="100.0" text="Kilo counter" />
+            <TableColumn fx:id="tarrived" minWidth="100.0" prefWidth="180.0" text="Time arrived" />
+            <TableColumn fx:id="tstart" minWidth="50.0" prefWidth="200.0" text="start time" />
+            <TableColumn fx:id="tend" minWidth="50.0" prefWidth="200.0" text="end time" />
+            <TableColumn fx:id="tdel" minWidth="50.0" prefWidth="200.0" text="Delivery time" />
+        </columns>
+      </TableView>
+      <AnchorPane cache="true" cacheHint="SPEED" layoutX="40.0" layoutY="23.0" onMouseClicked="#backToHome" prefHeight="30.0" prefWidth="172.0">
+         <children>
+            <FontAwesomeIcon fill="#484848" glyphName="ARROW_LEFT" layoutY="27.0" onMouseClicked="#backToHome" size="30px" text="" wrappingWidth="31.714284896850586">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIcon>
+            <Label layoutX="51.0" layoutY="7.0" prefHeight="19.0" prefWidth="113.0" text="back to home" textFill="#484848">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+      <JFXButton layoutX="1223.0" layoutY="14.0" onAction="#PRINT" prefHeight="38.0" prefWidth="139.0" text="Print" textFill="#484848">
+         <graphic>
+            <FontAwesomeIcon fill="#484848" glyphName="PRINT" size="30PX" />
+         </graphic>
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

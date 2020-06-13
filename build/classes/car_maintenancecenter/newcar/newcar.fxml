@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1400.0" style="-fx-background-color: B3EFF9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="car_maintenancecenter.newcar.newcar">
+   <children>
+      <AnchorPane layoutX="52.0" layoutY="27.0" onMouseClicked="#backToHome" prefHeight="30.0" prefWidth="170.0">
+         <children>
+            <Label layoutX="46.0" layoutY="7.0" prefHeight="19.0" prefWidth="113.0" styleClass="pal" stylesheets="@../pcss.css" text="back to home" textFill="#484848">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="#484848" glyphName="ARROW_LEFT" layoutX="8.0" layoutY="26.0" size="30px" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+      <Line endX="374.347900390625" endY="-1.0" layoutX="257.0" layoutY="671.0" startX="-219.878662109375" startY="-2.878662109375" strokeWidth="3.0">
+         <effect>
+            <Shadow />
+         </effect>
+      </Line>
+      <Line endX="-222.0" endY="-595.2734985351562" layoutX="257.0" layoutY="680.0" startX="-221.99998474121094" startY="-14.0" strokeWidth="3.0">
+         <effect>
+            <Shadow />
+         </effect>
+      </Line>
+      <AnchorPane layoutX="35.0" layoutY="70.0" prefHeight="596.0" prefWidth="613.0" styleClass="pa" stylesheets="@../pcss.css">
+         <children>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="20.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/carin.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="97.0" layoutY="18.0" styleClass="pal" stylesheets="@../pcss.css" text="Vehicle  :" textFill="#484848">
+               <font>
+                  <Font name="Arial" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="75.0" prefHeight="40.0" prefWidth="260.0" styleClass="pal" stylesheets="@../pcss.css" text="- VIN Number" textFill="#484848">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="300.0" prefHeight="40.0" prefWidth="260.0" styleClass="pal" stylesheets="@../pcss.css" text="-Year of production : " textFill="#484848">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="225.0" prefHeight="40.0" prefWidth="260.0" styleClass="pal" stylesheets="@../pcss.css" text="-Model :" textFill="#484848">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="vin" focusColor="#273238" layoutX="316.0" layoutY="75.0" prefHeight="40.0" prefWidth="220.0" promptText="Enter vin  here..." unFocusColor="#484848">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="manu" focusColor="#273238" layoutX="316.0" layoutY="150.0" prefHeight="40.0" prefWidth="220.0" promptText="Enter name company here..." unFocusColor="#484848">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="model" focusColor="#273238" layoutX="316.0" layoutY="225.0" prefHeight="40.0" prefWidth="220.0" promptText="Enter model  here..." unFocusColor="#484848">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font></JFXTextField>
+            <Label layoutX="20.0" layoutY="375.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="260.0" styleClass="pal" stylesheets="@../pcss.css" text="-Plate Number : " textFill="#484848">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="450.0" prefHeight="40.0" prefWidth="260.0" styleClass="pal" stylesheets="@../pcss.css" text="Fuel type :" textFill="#484848">
+               <font>
+                  <Font name="Arial" size="21.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <JFXTextField fx:id="plate" focusColor="#273238" layoutX="316.0" layoutY="375.0" prefHeight="40.0" prefWidth="220.0" promptText="Enter plate no  here..." unFocusColor="#484848">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font></JFXTextField>
+            <JFXButton fx:id="save" buttonType="RAISED" layoutX="454.0" layoutY="522.0" onAction="#save" prefHeight="40.0" prefWidth="120.0" ripplerFill="#f2ae02" styleClass="bal" stylesheets="@../pcss.css" text="Save">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXTextField fx:id="year" focusColor="#273238" layoutX="316.0" layoutY="300.0" prefHeight="40.0" prefWidth="220.0" promptText="Enter year  here..." unFocusColor="#484848">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font></JFXTextField>
+            <Label layoutX="20.0" layoutY="150.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="260.0" styleClass="pal" stylesheets="@../pcss.css" text="-Manufacture company : " textFill="#484848">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="fuel" layoutX="326.0" layoutY="444.0" prefHeight="40.0" prefWidth="200.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXComboBox>
+         </children>
+      </AnchorPane>
+      <Line endX="426.71112060546875" endY="-1.000030517578125" layoutX="923.0" layoutY="371.0" startX="-222.0" startY="-1.000030517578125" strokeWidth="3.0">
+         <effect>
+            <Shadow />
+         </effect>
+      </Line>
+      <Line endX="-222.0" endY="-301.0" layoutX="923.0" layoutY="377.0" startX="-222.0" startY="-7.0" strokeWidth="3.0">
+         <effect>
+            <Shadow />
+         </effect>
+      </Line>
+      <AnchorPane layoutX="701.0" layoutY="70.0" prefHeight="300.0" prefWidth="663.0" styleClass="pa" stylesheets="@../pcss.css">
+         <children>
+            <Label layoutX="20.0" layoutY="70.0" prefHeight="40.0" prefWidth="200.0" styleClass="pal" stylesheets="@../pcss.css" text="- Onwer ID  :">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="175.0" prefHeight="40.0" prefWidth="200.0" styleClass="pal" stylesheets="@../pcss.css" text="- Phone number :">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="125.0" prefHeight="40.0" prefWidth="200.0" styleClass="pal" stylesheets="@../pcss.css" text="- Onwer name  : ">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="230.0" prefHeight="40.0" prefWidth="200.0" styleClass="pal" stylesheets="@../pcss.css" text="- Address :">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="20.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/info.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="83.0" layoutY="11.0" prefHeight="33.0" prefWidth="146.0" styleClass="pal" stylesheets="@../pcss.css" text="Owner :">
+               <font>
+                  <Font name="Arial" size="29.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="id" focusColor="#273238" layoutX="225.0" layoutY="70.0" prefHeight="40.0" prefWidth="220.0" promptText="Enter id here ....." unFocusColor="#484848">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="add" focusColor="#273238" layoutX="225.0" layoutY="230.0" prefHeight="40.0" prefWidth="220.0" promptText="Enter address here..." unFocusColor="#484848">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="phone" focusColor="#273238" layoutX="225.0" layoutY="175.0" prefHeight="40.0" prefWidth="220.0" promptText="Enter phone number here..." unFocusColor="#484848">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="name" focusColor="#273238" layoutX="225.0" layoutY="125.0" prefHeight="40.0" prefWidth="220.0" promptText="Enter name  here....." unFocusColor="#484848">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font></JFXTextField>
+            <JFXButton fx:id="find" buttonType="RAISED" layoutX="511.0" layoutY="180.0" onAction="#find" prefHeight="40.0" prefWidth="120.0" ripplerFill="#f2ae02" styleClass="bal" stylesheets="@../pcss.css" text="Find owner">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="find1" buttonType="RAISED" layoutX="511.0" layoutY="233.0" onAction="#saveo" prefHeight="40.0" prefWidth="120.0" ripplerFill="#f2ae02" styleClass="bal" stylesheets="@../pcss.css" text="Add">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Line endX="426.71112060546875" endY="-1.000030517578125" layoutX="923.0" layoutY="566.0" startX="-222.0" startY="-1.000030517578125" strokeWidth="3.0">
+         <effect>
+            <Shadow />
+         </effect>
+      </Line>
+      <Line endX="-222.0" endY="-104.28683471679688" layoutX="923.0" layoutY="567.0" startX="-222.0" startY="-7.0" strokeWidth="3.0">
+         <effect>
+            <Shadow />
+         </effect>
+      </Line>
+      <AnchorPane layoutX="701.0" layoutY="450.0" prefHeight="114.0" prefWidth="663.0" style="-fx-background-color: #AEE8F2;" styleClass="pa" stylesheets="@../pcss.css">
+         <children>
+            <Label fx:id="msg" layoutX="31.0" layoutY="22.0" prefHeight="75.0" prefWidth="555.0" textFill="TOMATO" wrapText="true">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

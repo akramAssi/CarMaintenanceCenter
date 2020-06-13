@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<JFXTabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1400.0" styleClass="tab-header-background" stylesheets="@../pcss.css" tabMaxHeight="700.0" tabMaxWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="car_maintenancecenter.main.mainController">
+   <tabs>
+      <Tab fx:id="TAB" text="home">
+         <content>
+            <AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1400.0" />
+         </content>
+      </Tab>
+      <Tab text="Vehicles inside the center">
+        <content>
+            <AnchorPane fx:id="vicroot" prefHeight="700.0" prefWidth="1400.0" />
+        </content>
+      </Tab>
+   </tabs>
+</JFXTabPane>
